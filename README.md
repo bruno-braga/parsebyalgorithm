@@ -10,9 +10,11 @@ const readline = require('readline');
 const fs = require('fs');
 
 let algorithm = (data) => {
-    // manipulate data the way you want here,
-    // just keep in mind that you will be reading
-    // one line per "iteration" as the Parser uses nodejs readline module
+  // manipulate data the way you want here,
+  // just keep in mind that you will be reading
+  // one line per "iteration" as the Parser uses nodejs readline module
+
+  return data.reverse();  
 }
 
 const parser = new Parser(stream, readline);
