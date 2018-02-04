@@ -5,11 +5,16 @@
   "main": "distribution/index.js",
   "scripts": {
     "build": "babel source --presets babel-preset-node6 --out-dir distribution",
+    "test": "mocha --opts test/mocha.opts test/*/*_spec.js",
     "example": "cd ./example && node example.js",
-    "test": "mocha --opts test/mocha.opts test/*/*_spec.js"
+    "prepublish": "npm run build"
   },
   "author": "Bruno Braga <braga@riseup.net>",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bruno-braga/parsebyalgorithm"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-node6": "^11.0.0",
