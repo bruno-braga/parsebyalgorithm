@@ -16,7 +16,7 @@
     "url": "https://github.com/bruno-braga/parsebyalgorithm"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+    "@babel/cli": "^7.8.0",
     "babel-preset-node6": "^11.0.0",
     "chai": "^4.1.2",
     "mocha": "^5.0.0",
