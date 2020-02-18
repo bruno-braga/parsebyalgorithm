@@ -4,10 +4,23 @@ class ParseByAlgorithm {
     this.Readline = readline;
     this.parsedFile = [];
     this.parseAlgorithm = null;
+    this.splitKey = null;
   }
   
   setParseAlgorithm(algorithm) {
     this.parseAlgorithm = algorithm;
+  }
+
+  setSplitKey(key) {
+    this.splitKey = key;
+  }
+
+  getSplitKey() {
+    if (this.splitKey) {
+      return this.splitKey;
+    }
+
+    return ',';
   }
 
   isParseAlgorithmNull() {

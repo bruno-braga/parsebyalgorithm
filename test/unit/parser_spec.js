@@ -74,4 +74,41 @@ describe('Parser', () => {
 
     td.verify(parseAlgorithm(['1','1','2','3']));
   });
+
+  it('should set the character in which the csv will be splitted', () => {
+    const stream = {
+      PassThrough: td.function(),
+      end: td.function()
+    };
+
+    const readline = {
+      createInterface: td.function(),
+      on: td.function()
+    };
+
+    const splitKey = ',';
+
+    const parser = new Parser(stream, readline);
+    parser.setSplitKey(splitKey);
+
+    assert.equal(parser.getSplitKey(), splitKey);
+  });
+
+  it('should use comma as fallback splitKey', () => {
+    const stream = {
+      PassThrough: td.function(),
+      end: td.function()
+    };
+
+    const readline = {
+      createInterface: td.function(),
+      on: td.function()
+    };
+
+    const splitKey = ',';
+
+    const parser = new Parser(stream, readline);
+
+    assert.equal(parser.getSplitKey(), splitKey);
+  });
 });
