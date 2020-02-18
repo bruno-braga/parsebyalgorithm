@@ -1,6 +1,6 @@
 {
   "name": "parsebyalgorithm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple tool to parse csv files.",
   "main": "distribution/index.js",
   "scripts": {
@@ -21,7 +21,7 @@
     "parse"
   ],
   "devDependencies": {
-    "@babel/cli": "^7.8.0",
+    "babel-cli": "^6.26.0",
     "babel-preset-node6": "^11.0.0",
     "chai": "^4.1.2",
     "mocha": "^5.0.0",
