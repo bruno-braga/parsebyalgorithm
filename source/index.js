@@ -42,7 +42,7 @@ class ParseByAlgorithm {
 
     return new Promise((resolve, reject) => {
       this.lineReader(stream2buffer).on('line', (line) => {
-        let splitKey = line.match(',') ? ',' : ';';
+        let splitKey = this.getSplitKey();
         let keywords = line.split(splitKey);
 
         this.parsedFile.push(this.parseAlgorithm(keywords));
