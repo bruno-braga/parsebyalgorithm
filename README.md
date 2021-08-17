@@ -1,3 +1,8 @@
+
+## Description
+
+This package was developed  in order to learn TDD and also how to publish an npm package. Thus it was not done to be used in any kind of environment.
+
 ## ParseByAlgorithm
 
 ParseByAlgorithm is a small application that parser a csv file according to the algorithm(function) you set.
